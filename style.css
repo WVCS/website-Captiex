@@ -1,3 +1,125 @@
 body {
+  background: #000;
+}
 
+h1 {
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  letter-spacing: 6px; 
+  font-size: 2.5vw; 
+  font-weight: 1000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(225deg, #FF3CAC, #784BA0, #2B86C5);
+}
+
+#div1{
+  position: bottom;
+  height: 500px;
+  width: 100%;
+  padding: 5px;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  letter-spacing: 5px; 
+  font-size: 2.5vw; 
+  font-weight: 1000;
+  color: white;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 820px;
+}
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url('https://4kwallpapers.com/images/wallpapers/gradients-blue-river-colorful-chromatic-5k-3840x1080-2233.jpg');
+}
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('https://www.shutterstock.com/shutterstock/videos/1041433819/thumb/1.jpg?ip=x480');
+}
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('https://www.shutterstock.com/shutterstock/videos/1069422820/thumb/11.jpg?ip=x480');
+}
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+}
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+}
+.card {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #192734;
+    width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+.card__info {
+z-index: 2;
+  background-color: #22303C;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+.card__title {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Source Code Pro', monospace;
+}
+.card__by {
+    color: white;
+    font-size: 12px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+}
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.5;
+}
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+.card:hover .card__info-hover {
+    opacity: 1;
 }
